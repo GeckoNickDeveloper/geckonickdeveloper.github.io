@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_0',['y',['../structmag__field__t.html#a5ada5bbd9c11ccad9510044b274771c0',1,'mag_field_t']]]
+  ['samples_5favg_0',['samples_avg',['../structhmc5883l__config__t.html#a87c178ede687b02af4d8cbb76dd83aa6',1,'hmc5883l_config_t']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['output_5frate_0',['output_rate',['../structhmc5883l__config__t.html#a72b5b9ceef94ac6c04b2b15d6939079b',1,'hmc5883l_config_t']]]
+  ['hs_0',['hs',['../structhmc5883l__config__t.html#a22322c6dd6a093964ee5f86f89eeb62e',1,'hmc5883l_config_t']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hs_0',['hs',['../structhmc5883l__config__t.html#a22322c6dd6a093964ee5f86f89eeb62e',1,'hmc5883l_config_t']]]
+  ['dev_5faddr_0',['dev_addr',['../structhmc5883l__dev__t.html#aff0f04d06d225155d2a14ca60dd09b9d',1,'hmc5883l_dev_t']]]
 ];

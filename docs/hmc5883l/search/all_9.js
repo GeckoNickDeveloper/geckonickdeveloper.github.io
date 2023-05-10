@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['z_0',['z',['../structmag__field__t.html#a4272a78daf844eb1b8216e6dd8597513',1,'mag_field_t']]]
+  ['x_0',['x',['../structmag__field__t.html#ae1d9b472623201753f0f93924de76f09',1,'mag_field_t']]]
 ];

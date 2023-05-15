@@ -399,6 +399,15 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>esp_err_t</dd></dl>
+<p>Apply to the given sensor a specific configuration.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>Sensore to configure </td></tr>
+    <tr><td class="paramname">cfg</td><td>Configuration to use </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>esp_err_t </dd></dl>
 
 </div>
@@ -437,7 +446,16 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>hmc5883l_handle_t Sensor handler </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>hmc5883l_handle_t Sensor handler</dd></dl>
+<p>Create a sensor handler given the I2C port and sensor address.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>Specify the I2C port </td></tr>
+    <tr><td class="paramname">addr</td><td>Specify the sensor address </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>hmc5883l_handle_t Handle of the sensor </dd></dl>
 
 </div>
 </div>
@@ -461,6 +479,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sensor</td><td>Sensor handler</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>esp_err_t</dd></dl>
+<p>Delete the given handler.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>The handler to delete </td></tr>
   </table>
   </dd>
 </dl>
@@ -502,6 +528,15 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>esp_err_t</dd></dl>
+<p>Retrieve the configured gain value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>Sensor </td></tr>
+    <tr><td class="paramname">gain</td><td>Pointer where to store the gain </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>esp_err_t </dd></dl>
 
 </div>
@@ -540,6 +575,15 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>esp_err_t</dd></dl>
+<p>Retrieve the readings of the sensor adjusted according to current gain.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>Sensor </td></tr>
+    <tr><td class="paramname">mag</td><td>Pointer where to store the readings </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>esp_err_t </dd></dl>
 
 </div>
@@ -575,6 +619,15 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">sensor</td><td>Sensor handler </td></tr>
     <tr><td class="paramname">mag</td><td>Pointer to store the raw reading</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>esp_err_t</dd></dl>
+<p>Retrieve the raw readings of the sensor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>Sensor </td></tr>
+    <tr><td class="paramname">mag</td><td>Pointer where to store the raw reading </td></tr>
   </table>
   </dd>
 </dl>

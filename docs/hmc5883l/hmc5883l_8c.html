@@ -78,12 +78,12 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;esp_system.h&quot;</code><br />
 <code>#include &quot;driver/i2c.h&quot;</code><br />
-<code>#include &lt;esp_log.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="hmc5883l_8h_source.html">hmc5883l.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhmc5883l__dev__t.html">hmc5883l_dev_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to descrive a sensor.  <a href="structhmc5883l__dev__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -118,22 +118,22 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af84ebd5c854f6b09f210e730cf3421e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="hmc5883l_8h.html#a3a565faebca51d8edad8fc359e742080">hmc5883l_handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hmc5883l_8c.html#af84ebd5c854f6b09f210e730cf3421e0">hmc5883l_create</a> (i2c_port_t port, uint16_t addr)</td></tr>
-<tr class="memdesc:af84ebd5c854f6b09f210e730cf3421e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a sensor handler given the I2C port and sensor address.  <br /></td></tr>
+<tr class="memdesc:af84ebd5c854f6b09f210e730cf3421e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an handle for the sensor.  <br /></td></tr>
 <tr class="separator:af84ebd5c854f6b09f210e730cf3421e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b465b297cb360a2ae09098cc84bf529"><td class="memItemLeft" align="right" valign="top">esp_err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hmc5883l_8c.html#a6b465b297cb360a2ae09098cc84bf529">hmc5883l_delete</a> (<a class="el" href="hmc5883l_8h.html#a3a565faebca51d8edad8fc359e742080">hmc5883l_handle_t</a> sensor)</td></tr>
-<tr class="memdesc:a6b465b297cb360a2ae09098cc84bf529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the given handler.  <br /></td></tr>
+<tr class="memdesc:a6b465b297cb360a2ae09098cc84bf529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the sensor handler.  <br /></td></tr>
 <tr class="separator:a6b465b297cb360a2ae09098cc84bf529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0136bde0241c97b137f2933104c17da4"><td class="memItemLeft" align="right" valign="top">esp_err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hmc5883l_8c.html#a0136bde0241c97b137f2933104c17da4">hmc5883l_config</a> (<a class="el" href="hmc5883l_8h.html#a3a565faebca51d8edad8fc359e742080">hmc5883l_handle_t</a> sensor, const <a class="el" href="structhmc5883l__config__t.html">hmc5883l_config_t</a> cfg)</td></tr>
-<tr class="memdesc:a0136bde0241c97b137f2933104c17da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply to the given sensor a specific configuration.  <br /></td></tr>
+<tr class="memdesc:a0136bde0241c97b137f2933104c17da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the sensor according the cfg parameter.  <br /></td></tr>
 <tr class="separator:a0136bde0241c97b137f2933104c17da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2dc808157636a2e1423e987aece7f5d"><td class="memItemLeft" align="right" valign="top">esp_err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hmc5883l_8c.html#aa2dc808157636a2e1423e987aece7f5d">hmc5883l_get_gain</a> (<a class="el" href="hmc5883l_8h.html#a3a565faebca51d8edad8fc359e742080">hmc5883l_handle_t</a> sensor, uint16_t *gain)</td></tr>
-<tr class="memdesc:aa2dc808157636a2e1423e987aece7f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the configured gain value.  <br /></td></tr>
+<tr class="memdesc:aa2dc808157636a2e1423e987aece7f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves gain from configuration.  <br /></td></tr>
 <tr class="separator:aa2dc808157636a2e1423e987aece7f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1c56571bf663748fa25b3208813d36e"><td class="memItemLeft" align="right" valign="top">esp_err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hmc5883l_8c.html#ad1c56571bf663748fa25b3208813d36e">hmc5883l_get_raw_mag_field</a> (<a class="el" href="hmc5883l_8h.html#a3a565faebca51d8edad8fc359e742080">hmc5883l_handle_t</a> sensor, <a class="el" href="structmag__field__raw__t.html">mag_field_raw_t</a> *mag)</td></tr>
-<tr class="memdesc:ad1c56571bf663748fa25b3208813d36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the raw readings of the sensor.  <br /></td></tr>
+<tr class="memdesc:ad1c56571bf663748fa25b3208813d36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves raw readings.  <br /></td></tr>
 <tr class="separator:ad1c56571bf663748fa25b3208813d36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa24e34ae4023f297fbf0d63b483691c"><td class="memItemLeft" align="right" valign="top">esp_err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hmc5883l_8c.html#aaa24e34ae4023f297fbf0d63b483691c">hmc5883l_get_mag_field</a> (<a class="el" href="hmc5883l_8h.html#a3a565faebca51d8edad8fc359e742080">hmc5883l_handle_t</a> sensor, <a class="el" href="structmag__field__t.html">mag_field_t</a> *mag)</td></tr>
-<tr class="memdesc:aaa24e34ae4023f297fbf0d63b483691c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the readings of the sensor adjusted according to current gain.  <br /></td></tr>
+<tr class="memdesc:aaa24e34ae4023f297fbf0d63b483691c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the readings of the sensor.  <br /></td></tr>
 <tr class="separator:aaa24e34ae4023f297fbf0d63b483691c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -346,11 +346,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Apply to the given sensor a specific configuration. </p>
+<p>Configure the sensor according the cfg parameter. </p>
+<p>Apply to the given sensor a specific configuration.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sensor</td><td>Sensor handler </td></tr>
-    <tr><td class="paramname">cfg</td><td>Configuration to apply</td></tr>
+    <tr><td class="paramname">sensor</td><td>Sensore to configure </td></tr>
+    <tr><td class="paramname">cfg</td><td>Configuration to use </td></tr>
   </table>
   </dd>
 </dl>
@@ -384,15 +385,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a sensor handler given the I2C port and sensor address. </p>
+<p>Create an handle for the sensor. </p>
+<p>Create a sensor handler given the I2C port and sensor address.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>I2C port </td></tr>
-    <tr><td class="paramname">addr</td><td>I2C sensor address</td></tr>
+    <tr><td class="paramname">port</td><td>Specify the I2C port </td></tr>
+    <tr><td class="paramname">addr</td><td>Specify the sensor address </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>hmc5883l_handle_t Sensor handler </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>hmc5883l_handle_t Handle of the sensor </dd></dl>
 
 </div>
 </div>
@@ -412,10 +414,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Delete the given handler. </p>
+<p>Delete the sensor handler. </p>
+<p>Delete the given handler.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sensor</td><td>Sensor handler</td></tr>
+    <tr><td class="paramname">sensor</td><td>The handler to delete </td></tr>
   </table>
   </dd>
 </dl>
@@ -449,11 +452,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieve the configured gain value. </p>
+<p>Retrieves gain from configuration. </p>
+<p>Retrieve the configured gain value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sensor</td><td>Sensor handler </td></tr>
-    <tr><td class="paramname">gain</td><td>Pointer to store the configured gain value</td></tr>
+    <tr><td class="paramname">sensor</td><td>Sensor </td></tr>
+    <tr><td class="paramname">gain</td><td>Pointer where to store the gain </td></tr>
   </table>
   </dd>
 </dl>
@@ -487,11 +491,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieve the readings of the sensor adjusted according to current gain. </p>
+<p>Retrieves the readings of the sensor. </p>
+<p>Retrieve the readings of the sensor adjusted according to current gain.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sensor</td><td>Sensor handler </td></tr>
-    <tr><td class="paramname">mag</td><td>Pointer to store the reading</td></tr>
+    <tr><td class="paramname">sensor</td><td>Sensor </td></tr>
+    <tr><td class="paramname">mag</td><td>Pointer where to store the readings </td></tr>
   </table>
   </dd>
 </dl>
@@ -525,11 +530,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieve the raw readings of the sensor. </p>
+<p>Retrieves raw readings. </p>
+<p>Retrieve the raw readings of the sensor.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sensor</td><td>Sensor handler </td></tr>
-    <tr><td class="paramname">mag</td><td>Pointer to store the raw reading</td></tr>
+    <tr><td class="paramname">sensor</td><td>Sensor </td></tr>
+    <tr><td class="paramname">mag</td><td>Pointer where to store the raw reading </td></tr>
   </table>
   </dd>
 </dl>

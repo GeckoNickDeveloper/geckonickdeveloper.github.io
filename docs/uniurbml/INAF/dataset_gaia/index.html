@@ -1,0 +1,2202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>GaiaDR3 - uniurbml</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">uniurbml</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../lib/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Library
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#datasets-collapse" aria-expanded="false">
+                    Datasets
+                </a>
+                <div class="collapse" id="datasets-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#inaf-collapse" aria-expanded="false">
+            INAF
+        </a>
+
+        <div class="collapse" id="inaf-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            GaiaDR3
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#har-collapse" aria-expanded="false">
+            HAR
+        </a>
+
+        <div class="collapse" id="har-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../datasets/MotionSense_Guide/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            MotionSense
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../datasets/UCI-HAR_Guide/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            UCI-HAR
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../datasets/PAMAP2_Guide/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            PAMAP2
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../datasets/SisFall_Guide/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            SisFall
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../datasets/realWorld2016_Guide/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            realWorld2016
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../todo/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    ToDo
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../about/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    About
+                </a>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../../lib/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../../datasets/MotionSense_Guide/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="inaf-lyrceph-data-analisys">INAF - Lyr/Ceph data analisys</h1>
+<p>This document contains a list of headers present in both the dataset files (<code>gaiadr3-RRLyr-gspc</code> and <code>cepheid_X_gdr3L-gspc-result</code>)
+It is important to still filter the non-float data in order to make them usable by ML approaches</p>
+<h2 id="columns">Columns</h2>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Merged</th>
+<th>GaiaDR3-RRLyrae-gaia_source</th>
+<th>GaiaDR3-RRLyrae-vari_rrlyrae</th>
+<th>GaiaDR3-Cepheid-gaia_source</th>
+<th>GaiaDR3-Cepheid-vari_cepheid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>solution_id</td>
+<td>-</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>source_id</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>pf</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>pf_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>p1_o</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>p1_o_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>epoch_g</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>epoch_g_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>epoch_bp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>epoch_bp_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>epoch_rp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>epoch_rp_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>epoch_rv</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>epoch_rv_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>int_average_g</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>int_average_g_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>int_average_bp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>int_average_bp_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>int_average_rp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>int_average_rp_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>average_rv</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>average_rv_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>peak_to_peak_g</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>peak_to_peak_g_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>peak_to_peak_bp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>peak_to_peak_bp_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>peak_to_peak_rp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>peak_to_peak_rp_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>peak_to_peak_rv</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>peak_to_peak_rv_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>metallicity</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>metallicity_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>r21_g</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>r21_g_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>r31_g</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>r31_g_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>phi21_g</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>phi21_g_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>phi31_g</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>phi31_g_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>num_clean_epochs_g</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>num_clean_epochs_bp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>num_clean_epochs_rp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>num_clean_epochs_rv</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>zp_mag_g</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>zp_mag_bp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>zp_mag_rp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>num_harmonics_for_p1_g</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>num_harmonics_for_p1_bp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>num_harmonics_for_p1_rp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>num_harmonics_for_p1_rv</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>reference_time_g</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>reference_time_bp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>reference_time_rp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>reference_time_rv</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq2</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq2_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_ampl_g</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_ampl_g_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_phase_g</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_phase_g_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_ampl_bp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_ampl_bp_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_phase_bp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_phase_bp_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_ampl_rp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_ampl_rp_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_phase_rp</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_phase_rp_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_ampl_rv</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_ampl_rv_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_phase_rv</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>fund_freq1_harmonic_phase_rv_error</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>best_classification</td>
+<td>-</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>g_absorption</td>
+<td>-</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>g_absorption_error</td>
+<td>-</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>p2_o</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>p2_o_error</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>type_best_classification</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>type2_best_sub_classification</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>mode_best_classification</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>multi_mode_best_classification</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>designation</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>random_index</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ref_epoch</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ra</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ra_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>dec</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>dec_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>parallax</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>parallax_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>parallax_over_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pm</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pmra</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pmra_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pmdec</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pmdec_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ra_dec_corr</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ra_parallax_corr</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ra_pmra_corr</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ra_pmdec_corr</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>dec_parallax_corr</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>dec_pmra_corr</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>dec_pmdec_corr</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>parallax_pmra_corr</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>parallax_pmdec_corr</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pmra_pmdec_corr</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>astrometric_n_obs_al</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>astrometric_n_obs_ac</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>astrometric_n_good_obs_al</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>astrometric_n_bad_obs_al</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>astrometric_gof_al</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>astrometric_chi2_al</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>astrometric_excess_noise</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>astrometric_excess_noise_sig</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>astrometric_params_solved</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>astrometric_primary_flag</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>nu_eff_used_in_astrometry</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pseudocolour</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pseudocolour_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ra_pseudocolour_corr</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>dec_pseudocolour_corr</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>parallax_pseudocolour_corr</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pmra_pseudocolour_corr</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pmdec_pseudocolour_corr</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>astrometric_matched_transits</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>visibility_periods_used</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>astrometric_sigma5d_max</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>matched_transits</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>new_matched_transits</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>matched_transits_removed</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ipd_gof_harmonic_amplitude</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ipd_gof_harmonic_phase</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ipd_frac_multi_peak</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ipd_frac_odd_win</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ruwe</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>scan_direction_strength_k1</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>scan_direction_strength_k2</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>scan_direction_strength_k3</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>scan_direction_strength_k4</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>scan_direction_mean_k1</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>scan_direction_mean_k2</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>scan_direction_mean_k3</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>scan_direction_mean_k4</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>duplicated_source</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_g_n_obs</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_g_mean_flux</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_g_mean_flux_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_g_mean_flux_over_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_g_mean_mag</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_bp_n_obs</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_bp_mean_flux</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_bp_mean_flux_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_bp_mean_flux_over_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_bp_mean_mag</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_rp_n_obs</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_rp_mean_flux</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_rp_mean_flux_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_rp_mean_flux_over_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_rp_mean_mag</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_bp_rp_excess_factor</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_bp_n_contaminated_transits</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_bp_n_blended_transits</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_rp_n_contaminated_transits</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_rp_n_blended_transits</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_proc_mode</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>bp_rp</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>bp_g</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>g_rp</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>radial_velocity</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>radial_velocity_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rv_method_used</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rv_nb_transits</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rv_nb_deblended_transits</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rv_visibility_periods_used</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rv_expected_sig_to_noise</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rv_renormalised_gof</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rv_chisq_pvalue</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rv_time_duration</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rv_amplitude_robust</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rv_template_teff</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rv_template_logg</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rv_template_fe_h</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rv_atm_param_origin</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>vbroad</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>vbroad_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>vbroad_nb_transits</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>grvs_mag</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>grvs_mag_error</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>grvs_mag_nb_transits</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rvs_spec_sig_to_noise</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>phot_variable_flag</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>l</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>b</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ecl_lon</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ecl_lat</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>in_qso_candidates</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>in_galaxy_candidates</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>non_single_star</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>has_xp_continuous</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>has_xp_sampled</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>has_rvs</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>has_epoch_photometry</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>has_epoch_rv</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>has_mcmc_gspphot</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>has_mcmc_msc</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>in_andromeda_survey</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>classprob_dsc_combmod_quasar</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>classprob_dsc_combmod_galaxy</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>classprob_dsc_combmod_star</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>teff_gspphot</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>teff_gspphot_lower</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>teff_gspphot_upper</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>logg_gspphot</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>logg_gspphot_lower</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>logg_gspphot_upper</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>mh_gspphot</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>mh_gspphot_lower</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>mh_gspphot_upper</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>distance_gspphot</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>distance_gspphot_lower</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>distance_gspphot_upper</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>azero_gspphot</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>azero_gspphot_lower</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>azero_gspphot_upper</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ag_gspphot</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ag_gspphot_lower</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ag_gspphot_upper</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ebpminrp_gspphot</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ebpminrp_gspphot_lower</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ebpminrp_gspphot_upper</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>libname_gspphot</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>solution_id_y</td>
+<td>Yes</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="remove-non-float-data">Remove non-float data</h2>
+<pre><code class="language-python">cols_to_drop = []
+
+for i in range(len(df.columns)):
+    if pd.api.types.infer_dtype(df[df.columns[i]]) != 'floating':
+        cols_to_drop.append(df.columns[i])
+
+usable = df.drop(columns=cols_to_drop)
+
+</code></pre>
+<h2 id="remove-nan-values">Remove nan values</h2>
+<pre><code class="language-python">def filter_nan_col(df, col):
+    filtered_df = df.dropna(subset=[col])
+    return filtered_df
+
+def filter_nan(df, cols):
+    filtered_df = df
+    for col in cols:
+        if col not in df.columns:
+            print(f'Skipped [{col}]')
+        else:
+            filtered_df = filter_nan_col(filtered_df, col)
+            print(f'Post filter [{col}]: {filtered_df.shape[0]}')
+    return filtered_df
+</code></pre></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>

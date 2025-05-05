@@ -87,17 +87,14 @@
 							<a class="nav-link" href="../">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Projects</a>
+							<a class="nav-link" aria-current="page" href="../projects">Projects</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="../docs">Docs</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="../ideas/">Ideas</a>
+							<a class="nav-link active" aria-current="page" href="#">Ideas</a>
 						</li>
-						<!--<li class="nav-item">
-						<a class="nav-link disabled">Disabled</a>
-						</li>-->
 					</ul>
 					<!--<form class="d-flex" role="search">
 						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -110,18 +107,17 @@
 
 	<!-- Main Content -->
 	<main>
-		
 		<section class="py-5 text-center container">
 			<div class="row py-lg-5">
 				<div class="col-lg-6 col-md-8 mx-auto">
-					<h1 class="fw-light">My Projects</h1>
+					<h1 class="fw-light">Possible projects</h1>
 					<p class="lead text-body-secondary">
-						In this page you'll see a list of relevant projects made by myself. They are open source, so feel free to fork or use them. Thank you for visiting this showcase.
+						This page contains a list of ideas about possible future projects. Keep in mind that this list ONLY CONTAINS IDEAS: this means that every possible project here listed is not necesseraly created/in development.
 					</p>
-					<p>
-						<a href="https://github.com/GeckoNickDeveloper" class="btn btn-primary my-2" target="_blank">Check out my GitHub profile</a>
-						<!--<a href="#" class="btn btn-secondary my-2">Secondary action</a>-->
-					</p>
+					<!--<p>
+						<a href="#" class="btn btn-primary my-2">Main call to action</a>
+						<a href="#" class="btn btn-secondary my-2">Secondary action</a>
+					</p>-->
 				</div>
 			</div>
 		</section>
@@ -131,7 +127,42 @@
 		
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 					
-					<!-- BIM -->
+					<!-- Luna - C Package Manager -->
+					<div class="col" id="bim">
+						<div class="card shadow-sm">
+							<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+								<title>Placeholder</title>
+								<rect width="100%" height="100%" fill="#55595c"/>
+								<text x="50%" y="50%" fill="#eceeef" dy=".3em">Luna</text>
+							</svg>
+							<div class="card-body">
+								<p class="card-text">
+									C Package Manager: utility program to import open-source libraries into projects.<br>
+									Inspired by <a href="https://conan.io/" target="_blank">Conan</a>. 
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Life Adventure -->
+					<div class="col" id="bim">
+						<div class="card shadow-sm">
+							<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+								<title>Placeholder</title>
+								<rect width="100%" height="100%" fill="#55595c"/>
+								<text x="50%" y="50%" fill="#eceeef" dy=".3em">TODO App like a videogame</text>
+							</svg>
+							<div class="card-body">
+								<p class="card-text">
+									A TODO app embracing gameification. <br><br>
+									Inspired by <a href="https://play.google.com/store/apps/details?id=com.jayvant.liferpgmissions&hl=it&gl=US" target="_blank">LifeRPG</a>. 
+								</p>
+							</div>
+						</div>
+					</div>
+
+				<!--
+					<!-- BIM ->
 					<div class="col" id="bim">
 						<div class="card shadow-sm">
 							<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -146,7 +177,7 @@
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
 										<a type="button" class="btn btn-sm btn-outline-secondary" href="https://github.com/GeckoNickDeveloper/BIM" target="_blank">Repo</a>
-										<!--<a type="button" class="btn btn-sm btn-outline-secondary" href="../docs/hmc5883l" target="_blank">Doc</a>-->
+										<!--<a type="button" class="btn btn-sm btn-outline-secondary" href="../docs/hmc5883l" target="_blank">Doc</a>->
 									</div>
 									<small class="text-body-secondary">2020</small>
 								</div>
@@ -154,7 +185,7 @@
 						</div>
 					</div>
 
-					<!-- Icarus -->
+					<!-- Icarus ->
 					<div class="col" id="icarus">
 						<div class="card shadow-sm">
 							<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -164,12 +195,12 @@
 							</svg>
 							<div class="card-body">
 								<p class="card-text">
-									Experimental thesis: drone piloting system based on mobile networks written with the ESP-IDF framework. <br>
+									Experimental thesis: drone piloting system based on mobile networks written with the ESP-IDF framework.
 								</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
 										<a type="button" class="btn btn-sm btn-outline-secondary" href="https://github.com/GeckoNickDeveloper/Icarus" target="_blank">Repo</a>
-										<!--<a type="button" class="btn btn-sm btn-outline-secondary" href="../docs/hmc5883l" target="_blank">Doc</a>-->
+										<!--<a type="button" class="btn btn-sm btn-outline-secondary" href="../docs/hmc5883l" target="_blank">Doc</a>->
 									</div>
 									<small class="text-body-secondary">2023</small>
 								</div>
@@ -177,7 +208,7 @@
 						</div>
 					</div>
 
-					<!-- HMC5883L Driver -->
+					<!-- HMC5883L Driver ->
 					<div class="col" id="hmc5883l-driver">
 						<div class="card shadow-sm">
 							<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -187,19 +218,19 @@
 							</svg>
 							<div class="card-body">
 								<p class="card-text">
-									HMC5883L sensors' driver written in C using the ESP-IDF framework according to <a href="https://www.digikey.it/it/htmldatasheets/production/786600/0/0/1/asd2613-r.html" target="_blank">this</a> datasheet. <br>
+									HMC5883L sensors' driver written in C using the ESP-IDF framework according to <a href="https://www.digikey.it/it/htmldatasheets/production/786600/0/0/1/asd2613-r.html" target="_blank">this</a> datasheet.
 								</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
 										<a type="button" class="btn btn-sm btn-outline-secondary" href="https://github.com/GeckoNickDeveloper/hmc5883l" target="_blank">Repo</a>
-										<!--<a type="button" class="btn btn-sm btn-outline-secondary" href="../docs#hmc5883l-driver">Doc</a>-->
+										<a type="button" class="btn btn-sm btn-outline-secondary" href="../docs#hmc5883l-driver">Doc</a>
 									</div>
 									<small class="text-body-secondary">2023</small>
 								</div>
 							</div>
 						</div>
 					</div>
-
+				-->
 
 
 				</div>
